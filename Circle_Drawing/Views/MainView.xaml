@@ -5,14 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
+
     <UserControl.DataContext>
         <vm:MainViewModel />
     </UserControl.DataContext>
-    <Grid>
-        <Button Content="Click Me"
-                Command="{Binding ShowMessageCommand}"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Width="100" />
-    </Grid>
+
+    <DockPanel Dock="Top">
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Height="20">
+            <Button Content="Button 1" />
+            <Button Content="Button 2" />
+        </StackPanel>
+    </DockPanel>
+
 </UserControl>
