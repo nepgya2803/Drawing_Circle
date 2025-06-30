@@ -10,11 +10,11 @@
         <vm:MainViewModel />
     </UserControl.DataContext>
 
-    <DockPanel Dock="Top">
-        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Height="20">
-            <Button Content="Button 1" />
-            <Button Content="Button 2" />
-        </StackPanel>
+    <DockPanel LastChildFill="True" Dock="Top">
+        <Menu>
+            <MenuItem Header="Hi" />
+            <MenuItem Header="What" />
+        </Menu>
     </DockPanel>
 
 </UserControl>
