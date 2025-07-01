@@ -10,11 +10,36 @@
         <vm:MainViewModel />
     </UserControl.DataContext>
 
-    <DockPanel LastChildFill="True" Dock="Top">
-        <Menu>
-            <MenuItem Header="Hi" />
-            <MenuItem Header="What" />
-        </Menu>
+    <DockPanel LastChildFill="True" Margin="10">
+        <Grid DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Radius" Margin="4" VerticalAlignment="Center" />
+            <TextBox Grid.Row="0" Grid.Column="1" Name="Radius" Margin="4" />
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Ratio" Margin="4" VerticalAlignment="Center" />
+            <TextBox Grid.Row="1" Grid.Column="1" Name="Ratio" Margin="4" />
+
+            <Label Grid.Row="2" Grid.Column="0" Content="X" Margin="4" VerticalAlignment="Center" />
+            <TextBox Grid.Row="2" Grid.Column="1" Name="X" Margin="4" />
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Y" Margin="4" VerticalAlignment="Center" />
+            <TextBox Grid.Row="3" Grid.Column="1" Name="Y" Margin="4" />
+
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Collect" HorizontalAlignment="Center"
+                    Margin="10"
+                    Click="ButtonBase_OnClick" />
+        </Grid>
     </DockPanel>
 
 </UserControl>

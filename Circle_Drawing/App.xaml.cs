@@ -14,8 +14,11 @@ namespace Circle_Drawing
             var wnd = new MainWindow
             {
                 Title = "Circle Drawing",
-                Height = 800,
-                Width = 600
+                Height = 480,
+                Width = 640,
+                Focusable = true,
+                UseLayoutRounding = true,
+                WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
 
             wnd.Show();
