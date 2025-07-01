@@ -17,8 +17,7 @@ namespace Circle_Drawing.Views
             InitializeComponent();
             DataContext = new MainViewModel();
         }
-
-
+        
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
             _radius = Convert.ToDouble(Radius.Text);
